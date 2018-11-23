@@ -10,8 +10,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="../static/style.css">
     <link rel="stylesheet" href="../static/main.css">
-    <link rel="stylesheet" type="text/css" href="../static/login.css">
-    <link rel="stylesheet" type="text/css" href="../static/demo.css">
+    <link rel="stylesheet" type="text/css" href="../static/inter.css">
 </head>
 
 <body>
@@ -27,21 +26,26 @@
             </div>
         </div>
     </header>
-      <div class="form">
-      <form class="login-form">
-        <h1>Login</h1>
-        <p>Authentication required.</p>
-    <hr>
-        <input type="text" name="" placeholder="user name">
-        <input type="text" name="" placeholder="password">
-        <button style="width: 90%; margin-top: 20px;"><a style="color: #000;font-size: 15px;text-decoration: none;color: green;"" href="../templates/dashboard.html" > Login </a> </button> 
-        <p class="message"> Not Registered <a href="login.html" > Sign up</a></p>
-      </form>
+
+    <div>
+        <div class="dash" style="width: 30%; display: inline-block; box-sizing: border-box;margin-left: 20px;cursor: pointer;">
+            <center><img src="../images/red.jpg" onclick="window.location.href='../templates/profile.html'"></center>
+            <h1>Red-Flags</h1>
+        </div>
+        <div class="dash" style="width: 30%; display: inline-block; box-sizing: border-box;margin-left: 40px;cursor: pointer;">
+            <center><img src="../images/intervention.png" onclick="window.location.href='../templates/intervention.html'"></center>
+            <h1>Intervention</h1>
+        </div>
+        <div class="dash" style="width: 30%; display: inline-block; box-sizing: border-box;margin-left: 40px;cursor: pointer;">
+            <center><img src="../images/Avatar.png" onclick="window.location.href='../templates/Admin.html'"></center>
+            <h1>Admin Panel</h1>
+        </div>
     </div>
+
+
     <footer class="myfooter">
         <p>Be the voice of change</p>
     </footer>
-
 
 </body>
 

@@ -5,3 +5,19 @@
     border: 1px solid red;
     display: inline-block;
 }*/
+
+.dash {
+    border: 1px solid #ccc;
+    margin-top: 15%;
+    border-radius: 20px;
+    background-color: #440021;
+   
+}
+
+.dash h1{
+    text-align: center;
+    color: #fff;
+}
+.dash img {
+    width: 50%;
+}
