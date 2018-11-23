@@ -76,6 +76,9 @@ form {
 .logo a {
     color: azure;
 }
+.mytitle h1 {
+    margin-left: 20px;
+}
 
 @media screen and (max-width: 1080px) {
     .headnav {
