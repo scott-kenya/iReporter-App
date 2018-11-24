@@ -27,7 +27,7 @@
         </div>
     </header>
 
-    <div>
+    <!-- code goes here -->
         <div class="dash" style="width: 30%; display: inline-block; box-sizing: border-box;margin-left: 20px;cursor: pointer;">
             <center><img src="../images/red.jpg" onclick="window.location.href='../templates/profile.html'"></center>
             <h1>Red-Flags</h1>
@@ -37,11 +37,37 @@
             <h1>Intervention</h1>
         </div>
         <div class="dash" style="width: 30%; display: inline-block; box-sizing: border-box;margin-left: 40px;cursor: pointer;">
-            <center><img src="../images/Avatar.png" onclick="window.location.href='../templates/Admin.html'"></center>
-            <h1>Admin Panel</h1>
+            <center><img src="../images/Avatar.png" onclick="window.location.href='#'"></center>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Admin Login Here</h1>
+                    <a href="#card-container" id="button" class="button">Sign In</a>
+                </div>
         </div>
-    </div>
+         <!-- Modal Section -->
+            <section class="card-container" id="card-container">
+                <div class="bg-modal">
+                    <div class="modal-contents">
+                        <form action="">
+                        <div class="close">+</div>
+                        <img src="../images/Avatar.png" alt="" style="width: 30%;">
 
+                        
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="E-Mail">
+                            <input type="text" placeholder="........">
+                            <a href="../templates/Admin.html" class="button">Submit</a>
+                        </form>
+
+                    </div>
+                </div>
+                </section>
+            </section>
+
+    
+        
+
+<script type="text/javascript" src="../static/inter.js"></script>
 
     <footer class="myfooter">
         <p>Be the voice of change</p>
