@@ -34,46 +34,88 @@
           <p>Kibwezi County</p></center>
           <div style="margin: 24px 0;">
             <table>
-  <tr>
-    <th style="width:50%">Email</th>
-    <th>jamesbond@gmail.com</th>
-  </tr>
-  <tr>
-    <th style="width:50%">Telephone</th>
-    <th>+9 2345 1190</th>
-  </tr>
-</table>
+              <tr>
+                <th style="width:50%">Email</th>
+                <th>jamesbond@gmail.com</th>
+              </tr>
+              <tr>
+                <th style="width:50%">Telephone</th>
+                <th>+9 2345 1190</th>
+              </tr>
+            </table>
          </div>
         </div>
-        <div class="container">
-            <div class="login">
-            <div class="row">
-  <div class="column">
-    <img src="../images/red.jpg" style="width:100%; cursor: pointer;" onclick="window.location.href='../templates/createflag.html'" class="hover-shadow cursor">
-    <h3>Maize scandal</h3>
-  </div>
-  <div class="column">
-    <img src="../images/red.jpg" style="width:100%; cursor: pointer;" onclick="window.location.href='../templates/createflag.html'" class="hover-shadow cursor">
-    <h3>Police briberly</h3>
-  </div>
-  <div class="column">
-    <img src="../images/red.jpg" style="width:100%; cursor: pointer;" onclick="window.location.href='../templates/createflag.html'" class="hover-shadow cursor">
-    <h3>Chicken Egg Scandal</h3>
-  </div>
-  <div class="column">
-    <img src="../images/red.jpg" style="width:100%; cursor: pointer;" onclick="window.location.href='../templates/createflag.html'" class="hover-shadow cursor">
-    <h3>NYS</h3>
-  </div>
+
+        
+<!--red-flags -->
+
+    <button style="background-color: #440021; color: white; font-size: 20px;" class="flagies">The golden-berg scandal<img src="../images/smallred.png" style="margin-top: 45px;"></button>
+<div contenteditable="true" class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <form action="/action_page.php">
+  <input type="file" name="pic" accept="image/*">
+</form>
 </div>
 
-
-  </div>
+<button style="background-color: #ccc;font-size: 20px;color: black;" class="flagies">Maize scandal<img src="../images/smallred.png" style="margin-top: 45px;"></button>
+<div contenteditable="true" class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <form action="/action_page.php">
+  <input type="file" name="pic" accept="image/*">
+</form>
 </div>
-               
-      </div>
 
-        </div>
-    </div>
+<button style="background-color: #440021;font-size: 20px;color: white;" class="flagies">The chicken scandal<img src="../images/smallred.png" style="margin-top: 45px;"></button>
+<div contenteditable="true" class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <form action="/action_page.php">
+  <input type="file" name="pic" accept="image/*">
+</form>
+</div>
+
+<!-- interventions-->
+
+<button style="background-color: #ccc;color: black;font-size: 20px;" class="flagies">Dilapidated bridge<img src="../images/intervention.png" style="margin-top: 45px;"></button>
+<div contenteditable="true" class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <form action="/action_page.php">
+  <input type="file" name="pic" accept="image/*">
+</form>
+</div>
+
+<button style="background-color: #440021;color: white;font-size: 20px;" class="flagies">Pothole along muthotho avenue<img src="../images/intervention.png" style="margin-top: 45px;"></button>
+<div contenteditable="true" class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <form action="/action_page.php">
+  <input type="file" name="pic" accept="image/*">
+</form>
+</div>
+
+<button style="background-color: #ccc;color: black;font-size: 20px;" class="flagies">Garbage along hoi avenue<img src="../images/intervention.png" style="margin-top: 45px;"></button>
+<div contenteditable="true" class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <form action="/action_page.php">
+  <input type="file" name="pic" accept="image/*">
+</form>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("flagies");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+
 
     <footer class="myfooter">
         <p>Be the voice of change</p>
